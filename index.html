@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>West Sussex Primary Care Geographies</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css", type="text/css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <h1>West Sussex Primary Care Networks</h1>
+</div>
+
+<article class = "main">
+
+  <p>There are 21 Primary Care Networks (PCNs) across the three Clinical Commisionning Groups in West Sussex.</p>
+  <p>Each PCN is made up a group of a number of GP practices forming a network that covers approximately 30,000 to 50,000 patients. According to the <a href = 'https://www.england.nhs.uk/long-term-plan/', target = '_blank'>NHS Long Term Plan</a> PCNs will form an essential building block working in Integrated Care Systems.</p>
+
+<h2>Primary Care Networks overview of practices and population as at December 2019</h2>
+  <div id= 'pcn_overview_table'></div>
+
+  <p>The map below shows the 21 PCNs across West Sussex.</p>
+  <p>Each PCN boundary is made by aggregating Lower-layer Super Output Areas (LSOAs) together. However, it should be noted that GP practices do not have geographical boundaries and more than one GP practice can operate in the same local area.</p>
+  <p>Whilst the map is useful to understand roughly the local areas that each PCN may cover, for planning purposes, in reality these boundaries are not mutually exclusive (e.g. there is some crossover as patients may use GP services outside of their local areas).</p>
+  <p>We have assigned every LSOA in West Sussex to one PCN based on data from the number of residents in the LSOA registered to each GP practice and some GP practices operate in areas assigned to other PCNs (e.g. Horsham Collaborative practices in Horsham Central areas. PCN boundaries can transcend district and borough boundaries and some even cross into neighbouring counties.</p>
+
+ <div id="mapid"></div>
+ <div id='map_pcn_key'></div>
+
+<p>Click on an area or a dot on the map to find out more about a practice or PCN.</p>
+
+</article>
+
+
+
+<footer class="footer">Made by Dr Rich Tyler <a href = "https://github.com/psychty", target = "_blank">github/psychty</a> 2019</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+<<script src= "https://unpkg.com/shpjs@latest/dist/shp.js"></script>
+<script src="https://d3js.org/d3-format.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src = "map.js"></script>
+
+</body>
+</html>

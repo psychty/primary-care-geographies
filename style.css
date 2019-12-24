@@ -1,0 +1,109 @@
+
+/* The map does not have to have a specified width but it does need a height */
+
+
+#mapid {
+  height: 480px
+ }
+
+
+ .main {
+   max-width: 800px;
+  }
+
+ h1 {
+     font-size: 1.25rem;
+     color: #151f6d;
+     font-weight: bold;
+ }
+
+ h2 {
+     font-size: 1.1rem;
+     color: #151f6d;
+     font-weight: bold;
+   }
+
+ p {
+   font-size: 1rem;
+ }
+
+ .footer {
+   font-size: .8rem;
+   float: right;
+ }
+
+
+ /* Medium screens */
+ @media all and (min-width: 400px) {
+   /* We tell both sidebars to share a row */
+   .main {
+     flex: 4 0px;
+     margin: auto;
+   }
+
+   .aside-1 {
+     flex: 1 auto;
+     max-width: 200px;
+   padding-right: 15px;}
+
+   .aside-2 {
+     flex: 1 auto;
+     max-width: 200px;
+   padding-right: 15px;}
+ }
+
+ /* Large screens */
+ @media all and (min-width: 800px) {
+   /* We invert order of first sidebar and main
+    * And tell the main element to take twice as much width as the other two sidebars
+    */
+   .main {
+     flex: 4 0px;
+   }
+
+   .aside-1 {
+     order: 1;
+     max-width: 400px;
+   }
+   .main    {
+     order: 2;
+   }
+   .aside-2 {
+     order: 3;
+     max-width: 400px;
+   }
+   .footer  {
+     order: 4;
+   }
+ }
+
+
+ /* Tables */
+ table {
+ 		width: 100%;
+ 		border-collapse: collapse;
+
+     font-size: .9rem;
+     color: #000000;
+ 	}
+
+   tr:nth-of-type(odd) {
+ 		background: #d6ebff;
+ 	}
+
+ 	th {
+     background-color: #ffffff;
+ 		color: #256cb2;
+     font-size: 1.2rem;
+ 	}
+
+ 	td, th {
+     padding-top: 2px;
+ 		padding-right: 5px;
+     padding-left: 1px;
+     padding-bottom: 2px;
+     font-size: .9rem;
+ 		border: 1px solid #ffffff;
+     vertical-align: top;
+ 		text-align: left;
+ 	}
