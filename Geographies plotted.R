@@ -105,6 +105,7 @@ Overview <- Overview %>%
   left_join(PCN_patients, by = 'PCN')
 
 Overview %>% 
+  mutate(PCN = gsub('West Sussex - ', '', PCN)) %>% 
   toJSON() %>% 
   write_lines(paste0(github_repo_dir, '/pcn_overview.json'))
 
