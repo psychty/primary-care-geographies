@@ -27,6 +27,15 @@
    font-size: 1rem;
  }
 
+ p.side_important {
+   text-align: justify;
+   font-weight: bold;
+   color: red;
+   text-justify: inter-word;
+ }
+
+
+
  .footer {
    font-size: .8rem;
    float: right;
